@@ -22,7 +22,7 @@ test.describe.serial('Using Storage State File on the parallel mode', () => {
     test.beforeEach("Before Each Hook - Navigate to Create Lead Page", async ({ page }) => {
 
         console.log('Navigating to Create Lead Page before each test'); 
-        await page.goto("http://leaftaps.com/opentaps/control/main");
+        await page.goto("https://leaftaps.com/opentaps/control/login");
         await page.locator("#username").fill("Demosalesmanager")
 
 await page.locator("password").fill("crmsfa")

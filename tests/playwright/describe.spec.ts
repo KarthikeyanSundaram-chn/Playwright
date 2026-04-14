@@ -2,7 +2,7 @@ import test from '@playwright/test';
 import dotenv from 'dotenv';
 
 
-const multiEnv = process.env.envFile || 'sf';
+const multiEnv = process.env.envFile || 'leafTap';
 dotenv.config({ path: `Data/${multiEnv}.env` });
 
  let url = process.env.URL as string

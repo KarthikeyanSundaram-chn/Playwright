@@ -29,7 +29,7 @@ for (let data of values) {
             console.log(data.UserName)
             console.log(data.Password)
 
-    await page.goto("http://leaftaps.com/opentaps/control/main");
+    await page.goto("https://leaftaps.com/opentaps/control/login");
     await page.locator("#username").fill(data.UserName)
     await page.locator("#password").fill(data.Password)  
     await page.locator(".decorativeSubmit").click()

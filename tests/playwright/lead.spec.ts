@@ -35,7 +35,7 @@ test.beforeEach(async ({ page }) => {
 
 // Setup: run before every test
 
-await page.goto("http://leaftaps.com/opentaps/control/main");
+await page.goto("https://leaftaps.com/opentaps/control/login");
 await page.locator("#username").fill("Demosalesmanager")
 
 await page.locator("password").fill("crmsfa")
