@@ -52,6 +52,6 @@ test("test.info",async({page})=>{
     await page.locator(".decorativeSubmit").click()   
 })
 
-test.only("test.only",async({page})=>{
+test("test.only",async({page})=>{
     await page.goto("https://www.amazon.in")
 })
