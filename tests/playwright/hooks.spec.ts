@@ -23,7 +23,13 @@ test.describe.serial('Using Storage State File on the parallel mode', () => {
 
         console.log('Navigating to Create Lead Page before each test'); 
         await page.goto("http://leaftaps.com/opentaps/control/main");
-        await page.waitForTimeout(2000);
+        await page.locator("#username").fill("Demosalesmanager")
+
+await page.locator("password").fill("crmsfa")
+
+await page.locator(".decorativeSubmit").click()
+
+        await page.waitForTimeout(3000);
         await page.click("#button")
     });
 
